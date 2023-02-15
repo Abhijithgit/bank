@@ -1,0 +1,46 @@
+h1{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#depo{
+    border: 2px solid white;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 20px;
+    width: 600px;
+}
+h2{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+#wdrw{
+    border: 2px solid white;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 20px;
+    width: 600px;
+}
+a{
+    text-decoration: none;
+}
+
+
+#delete{
+    /* margin-right: 30px;
+    margin-top: 30px; */
+    font-family: 'Poppins', sans-serif;
+}
+h6{
+    font-family: 'Poppins', sans-serif;
+}
+#logout{
+    width: 140px;
+    font-family: 'Poppins', sans-serif;
+}
+
+

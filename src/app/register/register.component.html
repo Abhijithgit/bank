@@ -1,0 +1,30 @@
+<h2>Sign UP</h2>
+<div class="container w-50 rounded-5 mb-5" id="maindiv">
+
+    <h2 class="text-center">Registration Form</h2>
+
+
+    <form [formGroup]="registerForm" action="" class="container text-center mt-3" (ngSubmit)="register()">
+
+
+        <div class="mt-5"><input formControlName="acno" type="text" class="form-control" id="acno" name="accountnumber" placeholder="Account Number">
+            <div *ngIf="this.registerForm.get('acno')?.errors && this.registerForm.get('acno')?.touched"><p class="text-danger">The input should only contain numbers</p></div >
+        </div>
+
+        <div class="mt-5"><input formControlName="user" type="text" name="username" class="form-control" id="user" placeholder="User Name">
+            <div *ngIf="this.registerForm.get('acno')?.errors && this.registerForm.get('user')?.touched"><p class="text-danger">The input should only contain alphabets</p></div >
+            
+        </div>
+
+        <div class="mt-5"><input formControlName="pass" type="password" placeholder="Password" class="form-control" name="password" id="pass">
+            <div *ngIf="this.registerForm.get('acno')?.errors && this.registerForm.get('pass')?.touched"><p class="text-danger">The input should not contain any special characters <p></div >
+        </div>
+
+
+        <div class="container mb-1"><button type="submit" class="btn btn-outline-warning mb-3 mt-5" > SIGN UP</button></div >
+
+    </form>
+
+    
+
+</div>

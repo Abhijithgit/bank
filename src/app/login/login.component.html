@@ -1,0 +1,23 @@
+<h2>{{data}}</h2>
+<div class="container w-50 rounded-5" id="maindiv">
+
+
+
+    <form action="" [formGroup]="loginForm" class="container text-center mt-5" (ngSubmit)="login()">
+
+       <div> <br><br><input formControlName="acno" type="text" class="form-control" id="acno" name="accountnumber" [placeholder]="inputplaceholder">
+        <div *ngIf="this.loginForm.get('acno')?.errors && this.loginForm.get('acno')?.touched"><p class="text-danger">The input should only contain numbers</p></div >
+     </div><br><br>
+
+        <div><input formControlName="pass" type="password" placeholder="Password" class="form-control" name="password" id="pass">
+            <div *ngIf="this.loginForm.get('acno')?.errors && this.loginForm.get('pass')?.touched"><p class="text-danger">The input should not contain any special characters <p></div >
+        </div><br><br>
+
+        <button type="submit" class="btn btn-outline-warning mb-3">  LOGIN</button>
+
+    
+    </form>
+
+    <div class="text-center mt-1 mb-3 text-light">Not yet Registered? <a routerLink="register">Click here</a></div>
+
+</div>
